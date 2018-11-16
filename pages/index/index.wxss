@@ -1,0 +1,45 @@
+/**index.wxss**/
+.imageView {
+  height: 335px;
+  width: 100%;
+  top: 0%;
+  border-color: red ;
+  border-width: 1px;
+  position: fixed;
+}
+
+.titleStyle {
+  position: fixed;
+  height: 40px;
+  width: 345px;
+  top: 335px;
+  font-size: 16px ;
+  font-weight: bolder;
+  margin-top: 0;
+}
+
+.footerView {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  bottom: 0px;
+  background-color: red;
+}
+
+.footerBtn {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  bottom: 0px;
+  background-color: red;
+  
+}
+
+.btnText {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  font-size: 20px ;
+  font-weight: bolder;
+  color: white;
+}

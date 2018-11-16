@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container"> 
+  <text class="titleStyle">{{goodsItem.title}}</text> 
+  <image class="imageView" src="{{goodsItem.skuimgurl}}" mode='scaleToFill'></image>
+
+
+<button class="footerBtn" bindtap='buyButDidClick' >
+<text class='btnText'>立即购买</text>
+</button>
+
+</view>
