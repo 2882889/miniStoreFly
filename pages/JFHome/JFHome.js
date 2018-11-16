@@ -9,7 +9,12 @@ Page({
   },
 
   onLoad: function () {
-    this.getPageData()
+    var thisPage = this
+    var currentPage = 0
+    var skuArray = []
+    this.getPageData(0 ,function (res) {
+      thisPage.setData({ currentPage: currentPage, skuArray: res })
+    })
   },
   
   //
@@ -19,21 +24,20 @@ Page({
     var thisPage = this
     var currentPage = 0
     var skuArray = []
-    this.getPageData(0, function (res) {
+    this.getPageData(0, function(res) {
       currentPage += 1
-      skuArray = skuArray.concat(sku)
+      skuArray = skuArray.concat(res)
       thisPage.setData({ currentPage: currentPage, skuArray: skuArray })
     })
   },
 
-  getPageData: function (pageNum, ee) {
+  getPageData: function (pageNum, e) {
     var thisPage = this
     this.getJFGoodsListId(pageNum ,function (resId) {
       var skuStr = resId.skuIds.toString()
       thisPage.getJFGoodsList(skuStr, function (res) {
-
-        // ee(res)
-        console.log(thisPage.data.skuArray)
+        console.log(res)
+        e(res)
       })
     })
   },
