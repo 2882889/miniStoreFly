@@ -25,9 +25,22 @@ Page({
     var currentPage = 0
     var skuArray = []
     this.getPageData(0, function(res) {
+      wx.stopPullDownRefresh()
+      wx.hideNavigationBarLoading()
       currentPage += 1
       skuArray = skuArray.concat(res)
       thisPage.setData({ currentPage: currentPage, skuArray: skuArray })
+    })
+  },
+
+  onReachBottom: function () {
+    let that = this;
+    var currentPage = this.data.currentPage
+    this.getPageData(currentPage, function (res) {
+      currentPage += 1
+      skuArray = skuArray.concat(res)
+      thisPage.setData({ currentPage: currentPage, skuArray: skuArray })
+      console.log(that.data.skuArray)
     })
   },
 
@@ -36,7 +49,6 @@ Page({
     this.getJFGoodsListId(pageNum ,function (resId) {
       var skuStr = resId.skuIds.toString()
       thisPage.getJFGoodsList(skuStr, function (res) {
-        console.log(res)
         e(res)
       })
     })
@@ -45,7 +57,6 @@ Page({
 
   getJFGoodsListId: function (pageNum, listId) {
     var url = this.data.pagePath + "&pageNo=" + pageNum + "&pageSize=" + this.data.pageSize
-      console.log(url)
     wx.request({
       url: url,
       header: {
@@ -66,7 +77,7 @@ Page({
           'content-type': 'application/json'
         },
         success(res) {
-          list(res.data)
+          list(res.data.sku)
         }
       })
     },

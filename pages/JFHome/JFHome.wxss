@@ -1,1 +1,14 @@
 /* pages/JFHome/JFHome.wxss */
+.scrollView {
+  width: 100%;
+  height: 100%;
+
+  background-color: blue
+}
+
+.view {
+  background-color: red;
+
+  width: 100%;
+  height: 200rpx;
+}

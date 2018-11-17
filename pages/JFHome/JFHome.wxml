@@ -1,4 +1,11 @@
 <!--index.wxml-->
-<scroll-view>
+<scroll-view class="scrollView">
+<view class="view">123</view>
 
 </scroll-view>
+
+
+
+
+
+
