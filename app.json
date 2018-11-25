@@ -1,6 +1,7 @@
 {
   "pages":[
-    "pages/JFHome/JFHome"
+    "pages/JFHome/JFHome",
+    "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

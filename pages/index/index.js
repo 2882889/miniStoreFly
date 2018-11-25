@@ -5,15 +5,16 @@ const app = getApp()
 Page({
   data: {
     goodsList:{},
-    goodsItem:{}
+    goodsItem:{},
+    skuId:""
   },
   //事件处理函数
   bindViewTap: function() {
     
   },
-  onLoad: function () {
+  onLoad: function (option) {
     var thisPage = this
-    this.getGoodsList('35622618986', function (res) {
+    this.getGoodsList(option.skuId, function (res) {
       console.log(res)
       var array = res.sku
       thisPage.setData({goodsItem:array[0]})
