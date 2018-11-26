@@ -168,7 +168,7 @@ Page({
 
   ditailDidClick: function(e) {
     console.log(e)
-    var urlStr = '../index/index?skuId=' + e.currentTarget.dataset.skuid
+    var urlStr = '../GoodsDetail/GoodsDetail?skuId=' + e.currentTarget.dataset.skuid
     wx.navigateTo({
       url: urlStr,
     })

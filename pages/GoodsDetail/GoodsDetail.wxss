@@ -1,0 +1,19 @@
+/**index.wxss**/
+
+.goodsDetail_page {
+background-color: greenyellow;
+width: 100%;
+flex-direction:column;
+}
+
+.imageView {
+  background-color: yellow;
+  width: 100%;
+  height: 730rpx;
+}
+
+.good_title {
+  font-size: 32rpx;
+  margin-left: 5%;
+  width: 90%;
+}

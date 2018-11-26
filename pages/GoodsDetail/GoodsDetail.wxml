@@ -1,0 +1,16 @@
+<view class="goodsDetail_page"> 
+<!-- src="{{goodsItem.skuimgurl}}1" -->
+  <view class="imageView">
+  <image></image></view>
+  <text class='good_title' style='background-color: red'>123lakjglekjgalkjdlakfj;lakjsfl;kadjfl;kjasdfl;kjasdl;fkjadlksjflakjdsfl;sadjkf</text>
+  <view style='background-color: red'>123</view>
+  <view style='background-color: red'>123</view>
+  <view style='background-color: red'>123</view>
+  <text class="titleStyle">{{goodsItem.title}}</text> 
+
+
+<button class="footerBtn" bindtap='buyButDidClick' >
+<text class='btnText'>立即购买</text>
+</button>
+
+</view>
