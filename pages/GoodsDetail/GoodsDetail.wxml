@@ -1,16 +1,20 @@
 <view class="goodsDetail_page"> 
 <!-- src="{{goodsItem.skuimgurl}}1" -->
-  <view class="imageView">
-  <image></image></view>
-  <text class='good_title' style='background-color: red'>123lakjglekjgalkjdlakfj;lakjsfl;kadjfl;kjasdfl;kjasdl;fkjadlksjflakjdsfl;sadjkf</text>
-  <view style='background-color: red'>123</view>
-  <view style='background-color: red'>123</view>
-  <view style='background-color: red'>123</view>
-  <text class="titleStyle">{{goodsItem.title}}</text> 
+<image class="imageView" src='{{goodsItem.skuimgurl}}' mode="aspectFit"></image>
+  <text class='good_title'>{{goodsItem.title}}</text>
+  <view class='goods_price_old_view'><text class='goods_price_old_text'>原价：￥123</text></view>
+  
+  <view class='goods_price_new_view'>
+    <text class='goods_price_new_text1' >券后</text>     <text class='goods_price_new_text2'>2</text>          <text class='goods_price_new_text1'>人拼购价：    </text> 
+    <text class='goods_price_new_text3'>￥9.99</text>
+    <text class='goods_price_new_text4'>好评数228</text>
+  </view>
 
+<view >
+  <text>领取优惠券立减：</text>
+  <text>30</text>
+</view>
 
-<button class="footerBtn" bindtap='buyButDidClick' >
-<text class='btnText'>立即购买</text>
-</button>
+<button class='footerBtn'  bindtap='buyButDidClick' ><text class='btnText'>立即购买</text></button>
 
 </view>
