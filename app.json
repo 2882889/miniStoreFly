@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/GoodsDetail/GoodsDetail",
-    "pages/JFHome/JFHome"
+    "pages/JFHome/JFHome",
+    "pages/GoodsDetail/GoodsDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",

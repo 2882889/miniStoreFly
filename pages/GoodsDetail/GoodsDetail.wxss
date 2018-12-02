@@ -4,22 +4,86 @@ page {
   height: 100%;
 }
 
+page{  
+  height: 100%; 
+} 
+
 .goodsDetail_page {
-background-color: greenyellow;
+background-color: white;
 width: 100%;
+height: 100%;
+display: flex;
 flex-direction:column;
-justify-content:center;
+justify-content: space-between; 
+
 }
 
 .imageView {
-  background-color: yellow;
+  background-color: white;
   width: 100%;
-  height: 730rpx;
+  height: 800rpx;
 }
 
-.detail .title {
-  font-size: 40rpx;
-  margin: 10rpx;
-  color: black;
-  text-align: justify;
+.good_title {
+  font-size: 34rpx;
+  padding-left: 20rpx;
+  word-break:break-all; 
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp:2; 
+  overflow: hidden;
+  text-overflow:ellipsis;
+  font-weight: bold;
 }
+
+ .goods_price_old_view .goods_price_old_text{
+  width: 710rpx;
+  color: #888;
+  text-decoration: line-through;
+  font-size: 26rpx;
+  padding-left: 20rpx;
+}
+
+.goods_price_new_view {
+  padding-left: 20rpx;
+}
+
+.goods_price_new_text1 {
+  font-size: 26rpx;
+  color: #707070;
+}
+
+.goods_price_new_text2 {
+  font-size: 26rpx;
+  color: #FB1B38;
+}
+
+.goods_price_new_text3 {
+  font-size: 28rpx;
+  color: #000000;
+  font-weight:bold;
+}
+
+.goods_price_new_text4 {
+  font-size: 26rpx;
+  color: #8D8D8D;
+  margin-left: 40rpx;
+}
+
+.footerBtn {
+  height: 90rpx;
+  width: 100%;
+  background-color: #FE4924;
+}
+
+.btnText {
+  color: #DBFFFF;
+}
+
+
+
+
+
+
+
+
