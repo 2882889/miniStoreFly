@@ -1,9 +1,14 @@
-/**index.wxss**/
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 .goodsDetail_page {
 background-color: greenyellow;
 width: 100%;
 flex-direction:column;
+justify-content:center;
 }
 
 .imageView {
@@ -12,8 +17,9 @@ flex-direction:column;
   height: 730rpx;
 }
 
-.good_title {
-  font-size: 32rpx;
-  margin-left: 5%;
-  width: 90%;
+.detail .title {
+  font-size: 40rpx;
+  margin: 10rpx;
+  color: black;
+  text-align: justify;
 }
